@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flight Booking - SkyWay Airlines</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                ✈ Emma Airlines
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                
+
+                <li>
+                    <a href="booking.html" class="active">
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">services</a>
+                </li>
+
+                <li>
+                
+
+            </ul>
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+
+    <section class="booking-hero">
+
+        <h1>Book Your Flight</h1>
+
+        <p>
+            Plan your journey with SkyWay Airlines
+        </p>
+
+    </section>
+
+
+    <!-- Booking Section -->
+
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <!-- Booking Form -->
+
+            <div class="booking-form">
+
+                <h2>Flight Booking</h2>
+
+                <p class="form-description">
+                    Enter your information to book your flight.
+                </p>
+
+
+                <form id="bookingForm">
+
+                    <!-- Passenger Information -->
+
+                    <h3>Passenger Information</h3>
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="+92 300 1234567"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="passengers">
+                                Number of Passengers
+                            </label>
+
+                            <select id="passengers" required>
+
+                                <option value="">
+                                    Select passengers
+                                </option>
+
+                                <option value="1">
+                                    1 Passenger
+                                </option>
+
+                                <option value="2">
+                                    2 Passengers
+                                </option>
+
+                                <option value="3">
+                                    3 Passengers
+                                </option>
+
+                                <option value="4">
+                                    4 Passengers
+                                </option>
+
+                                <option value="5">
+                                    5 Passengers
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Flight Information -->
+
+                    <h3>Flight Information</h3>
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label for="from">
+                                From
+                            </label>
+
+                            <select id="from" required>
+
+                                <option value="">
+                                    Select departure
+                                </option>
+
+                                <option value="Islamabad">
+                                    Islamabad
+                                </option>
+
+                                <option value="Lahore">
+                                    Lahore
+                                </option>
+
+                                <option value="Karachi">
+                                    Karachi
+                                </option>
+
+                                <option value="Peshawar">
+                                    Peshawar
+                                </option>
+
+                                <option value="Dubai">
+                                    Dubai
+                                </option>
+
+                                <option value="Doha">
+                                    Doha
+                                </option>
+
+                                <option value="London">
+                                    London
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="to">
+                                To
+                            </label>
+
+                            <select id="to" required>
+
+                                <option value="">
+                                    Select destination
+                                </option>
+
+                                <option value="Islamabad">
+                                    Islamabad
+                                </option>
+
+                                <option value="Lahore">
+                                    Lahore
+                                </option>
+
+                                <option value="Karachi">
+                                    Karachi
+                                </option>
+
+                                <option value="Peshawar">
+                                    Peshawar
+                                </option>
+
+                                <option value="Dubai">
+                                    Dubai
+                                </option>
+
+                                <option value="Doha">
+                                    Doha
+                                </option>
+
+                                <option value="London">
+                                    London
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label for="date">
+                                Travel Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="class">
+                                Travel Class
+                            </label>
+
+                            <select id="class" required>
+
+                                <option value="">
+                                    Select class
+                                </option>
+
+                                <option value="Economy">
+                                    Economy
+                                </option>
+
+                                <option value="Business">
+                                    Business
+                                </option>
+
+                                <option value="First Class">
+                                    First Class
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="book-btn"
+                    >
+                        Confirm Booking
+                    </button>
+
+
+                    <p id="bookingMessage"></p>
+
+                </form>
+
+            </div>
+
+
+            <!-- Booking Information -->
+
+            <div class="booking-info">
+
+                <h2>Why Book With Us?</h2>
+
+
+                <div class="info-card">
+
+                    <span>✈️</span>
+
+                    <div>
+                        <h3>Safe Journey</h3>
+
+                        <p>
+                            Your safety is our first priority.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>💺</span>
+
+                    <div>
+                        <h3>Comfortable Seats</h3>
+
+                        <p>
+                            Enjoy a comfortable travel experience.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>💰</span>
+
+                    <div>
+                        <h3>Affordable Prices</h3>
+
+                        <p>
+                            Get competitive prices for your flights.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>🌍</span>
+
+                    <div>
+                        <h3>Many Destinations</h3>
+
+                        <p>
+                            Travel to destinations around the world.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>✈ Emma Airlines</h3>
+
+        <p>
+            Your journey, our responsibility.
+        </p>
+
+        <p>
+            © 2026 Emma Airlines. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="booking.js"></script>
+
+</body>
+
+</html>

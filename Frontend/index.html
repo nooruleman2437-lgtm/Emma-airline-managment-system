@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWay Airlines - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                ✈ Emma Airlines
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                
+                
+            </ul>
+
+            <button class="login-btn">Login</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Fly Beyond Your Dreams</h1>
+
+            <p>
+                Experience safe, comfortable and affordable
+                flights with SkyWay Airlines.
+            </p>
+
+            <button class="explore-btn" onclick="showMessage()">
+                Explore Flights
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Flight Search -->
+    <section class="search-section">
+
+        <h2>Search Your Flight</h2>
+
+        <div class="search-box">
+
+            <div class="input-group">
+                <label>From</label>
+                <input type="text" id="from" placeholder="Departure city">
+            </div>
+
+            <div class="input-group">
+                <label>To</label>
+                <input type="text" id="to" placeholder="Destination city">
+            </div>
+
+            <div class="input-group">
+                <label>Date</label>
+                <input type="date" id="date">
+            </div>
+
+            <button onclick="searchFlight()" class="search-btn">
+                Search Flight
+            </button>
+
+        </div>
+
+        <p id="result"></p>
+
+    </section>
+
+
+    <!-- Flight Information -->
+    <section class="flight-section">
+
+        <h2>Our Flight Information</h2>
+
+        <p class="section-text">
+            Check some of our popular flights and destinations.
+        </p>
+
+
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+
+                <div class="card-icon">✈️</div>
+
+                <h3>Islamabad → Dubai</h3>
+
+                <p>
+                    Flight No: SW-101
+                </p>
+
+                <p>
+                    Departure: 10:30 AM
+                </p>
+
+                <p>
+                    Duration: 3h 15m
+                </p>
+
+                <span class="status">On Time</span>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="card">
+
+                <div class="card-icon">🌍</div>
+
+                <h3>Lahore → London</h3>
+
+                <p>
+                    Flight No: SW-205
+                </p>
+
+                <p>
+                    Departure: 08:45 PM
+                </p>
+
+                <p>
+                    Duration: 8h 20m
+                </p>
+
+                <span class="status">On Time</span>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card">
+
+                <div class="card-icon">🏝️</div>
+
+                <h3>Karachi → Istanbul</h3>
+
+                <p>
+                    Flight No: SW-310
+                </p>
+
+                <p>
+                    Departure: 02:15 PM
+                </p>
+
+                <p>
+                    Duration: 6h 10m
+                </p>
+
+                <span class="status">On Time</span>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="card">
+
+                <div class="card-icon">🌆</div>
+
+                <h3>Peshawar → Doha</h3>
+
+                <p>
+                    Flight No: SW-412
+                </p>
+
+                <p>
+                    Departure: 06:30 PM
+                </p>
+
+                <p>
+                    Duration: 3h 40m
+                </p>
+
+                <span class="status">On Time</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Statistics -->
+    <section class="statistics">
+
+        <div class="stat-card">
+            <h2>120+</h2>
+            <p>Daily Flights</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>45+</h2>
+            <p>Destinations</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>10K+</h2>
+            <p>Passengers</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>98%</h2>
+            <p>On-Time Flights</p>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>✈ Emma Airlines</h3>
+
+        <p>
+            Your journey, our responsibility.
+        </p>
+
+        <p>
+            © 2026 Emma Airlines. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
